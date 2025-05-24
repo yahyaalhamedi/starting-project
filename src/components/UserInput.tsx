@@ -1,4 +1,10 @@
-const UserInput = ({ handleChange, userInput }) => {
+import { UserInputType } from '../App'
+
+interface UserInputProps {
+  handleChange: (field: string, value: number | string) => void
+  userInput: UserInputType
+}
+const UserInput = ({ handleChange, userInput }: UserInputProps) => {
   return (
     <section id="user-input">
       <div className="input-group">

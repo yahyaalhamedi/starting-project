@@ -3,13 +3,16 @@
 // - initialInvestment: The initial investment amount
 // - annualInvestment: The amount invested every year
 // - expectedReturn: The expected (annual) rate of return
+
+import { UserInputType } from '../App'
+
 // - duration: The investment duration (time frame)
 export function calculateInvestmentResults({
   initialInvestment,
   annualInvestment,
   expectedReturn,
   duration,
-}) {
+}: UserInputType) {
   const annualData = []
   let investmentValue = initialInvestment
 

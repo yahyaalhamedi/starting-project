@@ -1,6 +1,10 @@
+import { UserInputType } from '../App'
 import { calculateInvestmentResults, formatter } from '../util/investment'
 
-const Results = ({ userInput }) => {
+interface ResultsProps {
+  userInput: UserInputType
+}
+const Results = ({ userInput }: ResultsProps) => {
   const resultData = calculateInvestmentResults(userInput)
 
   const initialInvestment =
