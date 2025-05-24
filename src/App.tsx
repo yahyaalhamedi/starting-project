@@ -2,13 +2,7 @@ import { useState } from 'react'
 import Header from './components/Header'
 import UserInput from './components/UserInput'
 import Results from './components/Results'
-
-export interface UserInputType {
-  initialInvestment: number
-  annualInvestment: number
-  expectedReturn: number
-  duration: number
-}
+import { UserInputType } from './util/types'
 
 const App = () => {
   const [userInput, setUserInput] = useState<UserInputType>({
@@ -18,7 +12,7 @@ const App = () => {
     duration: 10,
   })
 
-  const handleChange = (inputIdentifier: string, newValue: number | string) => {
+  const handleChange = (inputIdentifier: string, newValue: string) => {
     setUserInput((prevState) => {
       return {
         ...prevState,

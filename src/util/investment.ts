@@ -4,7 +4,7 @@
 // - annualInvestment: The amount invested every year
 // - expectedReturn: The expected (annual) rate of return
 
-import { UserInputType } from '../App'
+import { UserInputType } from '../util/types'
 
 // - duration: The investment duration (time frame)
 export function calculateInvestmentResults({

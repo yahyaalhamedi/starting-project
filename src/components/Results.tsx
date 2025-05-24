@@ -1,4 +1,4 @@
-import { UserInputType } from '../App'
+import { UserInputType } from '../util/types'
 import { calculateInvestmentResults, formatter } from '../util/investment'
 
 interface ResultsProps {

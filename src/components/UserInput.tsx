@@ -1,7 +1,7 @@
-import { UserInputType } from '../App'
+import { UserInputType } from '../util/types'
 
 interface UserInputProps {
-  handleChange: (field: string, value: number | string) => void
+  handleChange: (field: string, value: string) => void
   userInput: UserInputType
 }
 const UserInput = ({ handleChange, userInput }: UserInputProps) => {
