@@ -8,15 +8,18 @@ interface InputFieldProps {
 
 const InputField = ({ title, value, onChange }: InputFieldProps) => {
   return (
-    <p>
-      <label>{title}</label>
+    // Using htmlFor and id for better accessibility
+    // and to link the label with the input field
+    <div id="container">
+      <label htmlFor={`input-${title.toLowerCase().replace(/\s+/g, '-')}`}>{title}</label>
       <input
+        id={`input-${title.toLowerCase().replace(/\s+/g, '-')}`}
         type="number"
         required
         value={value}
         onChange={onChange}
       />
-    </p>
+    </div>
   )
 }
 

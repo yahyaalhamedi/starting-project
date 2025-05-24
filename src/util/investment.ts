@@ -7,12 +7,12 @@
 import { UserInputType } from '../util/types'
 
 // - duration: The investment duration (time frame)
-export function calculateInvestmentResults({
+export const calculateInvestmentResults = ({
   initialInvestment,
   annualInvestment,
   expectedReturn,
   duration,
-}: UserInputType) {
+}: UserInputType) => {
   const annualData = []
   let investmentValue = initialInvestment
 
